@@ -54,7 +54,7 @@ const Profile = ({ profile, liked, showcased }) =>
                 noMargin
                 small
                 key={sandbox.id}
-                pickSandbox={({ id }) => openSandbox(id)}
+                selectSandbox={({ id }) => openSandbox(id)}
                 sandbox={sandbox}
               />
             ))}
@@ -85,7 +85,7 @@ const Profile = ({ profile, liked, showcased }) =>
                   defaultHeight={170}
                   small
                   key={sandbox.id}
-                  pickSandbox={({ id }) => openSandbox(id)}
+                  selectSandbox={({ id }) => openSandbox(id)}
                   sandbox={sandbox}
                 />
               ))}
